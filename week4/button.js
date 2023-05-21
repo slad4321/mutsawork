@@ -2,7 +2,7 @@ console.log("1")
 const mode = document.getElementById("first");
 console.log(mode);
 
-mode.addEventListener("mouseover", function() {
+mode.addEventListener("mouseover", function () {
     if (mode.innerText === "change") {
         mode.innerText = "changed!";
     } else {
@@ -35,20 +35,60 @@ var content = document.getElementById("content");
 var addBtn = document.getElementById("addBtn");
 var addedText = document.getElementById("added-text");
 
+console.log(content)
+console.log(addedText)
+
 var curItem;
 var list = [];
 
 content.addEventListener("keyup", (e) => addList(e));
 function addList(e) {
-  //   console.log(e);
-  //   console.log(e.target.value);
-  curItem = e.target.value;
+    //   console.log(e);
+    //   console.log(e.target.value);
+    curItem = e.target.value;
 }
 
 addBtn.addEventListener("click", addText);
 function addText() {
-  list.push(curItem);
-  curItem = "";
-  content.value = "";
-  addedText.innerHTML = list;
+    // console.log(list);
+    list.push(curItem);
+    // console.log("list", list);
+    content.value = "";
+    // addedText.innerHTML = list;
+    //  리스트로 출력
+    let finalText = "";
+    for (i = 0; i < list.length; i++) {
+        console.log(i);
+        finalText += `<li>${list[i]}</li>`;
+    }
+
+    console.log("final", finalText);
+    addedText.innerHTML = finalText;
 }
+//   list.push(curItem);
+//   curItem = "";
+//   content.value = "";
+//   addedText.innerHTML = list;
+
+// const newbutton = document.getElementById("linkBtn");
+// console.log(newbutton);
+
+// const navigateToLogin = () => {
+//     console.log(window.location);
+//     window.location.href = "/week4/index.html";
+//     console.log(newbutton);
+// };
+
+// newbutton.addEventListener("click", navigateToLogin);
+
+
+const loginBtn = document.getElementById("linkBtn");
+
+console.log(loginBtn);
+
+const navigateToLogin = () => {
+  console.log(window.location);
+  window.location.href = "/week4/index.html";
+};
+
+loginBtn.addEventListener("click", navigateToLogin);

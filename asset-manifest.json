@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/mutsawork.git/static/js/main.0f20acab.js",
-    "index.html": "/mutsawork.git/index.html",
-    "main.0f20acab.js.map": "/mutsawork.git/static/js/main.0f20acab.js.map"
+    "main.js": "/mutsawork/static/js/main.0f20acab.js",
+    "index.html": "/mutsawork/index.html",
+    "main.0f20acab.js.map": "/mutsawork/static/js/main.0f20acab.js.map"
   },
   "entrypoints": [
     "static/js/main.0f20acab.js"

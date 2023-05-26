@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/mutsawork/static/js/main.0f20acab.js",
+    "main.js": "/mutsawork/static/js/main.6fa20a5d.js",
     "index.html": "/mutsawork/index.html",
-    "main.0f20acab.js.map": "/mutsawork/static/js/main.0f20acab.js.map"
+    "main.6fa20a5d.js.map": "/mutsawork/static/js/main.6fa20a5d.js.map"
   },
   "entrypoints": [
-    "static/js/main.0f20acab.js"
+    "static/js/main.6fa20a5d.js"
   ]
 }
